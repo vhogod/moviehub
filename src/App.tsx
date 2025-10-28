@@ -12,7 +12,7 @@ interface Movie {
 
 function App() {
   const [movies, setMovies] = useState<Movie[]>([]);
-  const [page, setPage] = useState(1);
+  const [page] = useState(1);
   const [query, setQuery] = useState("");
   const [selectedMovie, setSelectedMovie] = useState<Movie | null>(null);
   const [darkMode, setDarkMode] = useState(false);
